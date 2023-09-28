@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Importance of adoption</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #ff6bea;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #ff6bea;
+        padding: 15px;
+        font-size: medium;
+        border-radius: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 10px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        color: #ff6bea;
+        text-decoration: none;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .info {
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #ff6bea;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.05);
+      }
+      button:hover {
+        transition: all 200ms ease;
+        cursor: pointer;
+        color: white;
+        background: #bdabff;
+      }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        max-width: 550px;
+        border-radius: 40px;
+        padding: 20px;
+        background-color: white;
+      }
+      .coder {
+        margin: 20px auto;
+        text-align: center;
+        font-family: monospace;
+      }
+      body {
+        background: linear-gradient(
+          68.6deg,
+          rgb(252, 165, 241) 1.8%,
+          rgb(181, 255, 255) 100.5%
+        );
+        color: #bdabff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Importance of Adoption</h1>
+      <h2>The Story of Chanel</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/251/original/foto_chanel.jfif?1695680653"
+        alt="Chanel"
+        width="300"
+      />
+      <p>
+        Today, I will immerse you in the enchanting story of
+        <strong>Chanel</strong>, a kitten of unparalleled beauty. It all began
+        on a magical March 13th, 2020, when a young woman stumbled upon a mother
+        cat and her five adorable newborn kittens nestled in a flowerpot. With a
+        heart overflowing with compassion, she decided to bring these little
+        treasures to her home, where she would provide them with care and love
+        until they were ready to find a new place in the world. As the months
+        passed, she managed to find a loving home for four of the kittens, but
+        there was one that captured her heart in a special way. This kitten
+        answered to the name Chanel, and in the instant their eyes met, Sarah
+        knew they were destined to be inseparable companions.
+      </p>
+      <br />
+      Since that magical day, Chanel and Sarah have woven an indissoluble bond,
+      a love story that defies time and space...
+      <p class="info">
+        <a
+          href="https://www.petfinder.com/adopt-or-get-involved/adopting-pets/about/general-pet-adoption-information/"
+          target="_blank"
+          class="learn-more"
+        >
+          <span> 🐾Learn more about adoption</span>
+        </a>
+      </p>
+      <button>Adopt a pet</button>
+      <p class="coder">Coded by Sarah Cabral</p>
+    </div>
+    <script>
+      function adopt() {
+        let name = prompt("What is your full name?");
+        let email = prompt("What is your email?");
+        let interest = prompt("Are you interested in adopting a pet?");
+        alert("thanks" + " " + name + " " + "we'll be in touch 😁🐾");
+      }
+      let adoptButton = document.querySelector("button");
+      adoptButton.addEventListener("click", adopt);
+    </script>
+  </body>
+</html>
